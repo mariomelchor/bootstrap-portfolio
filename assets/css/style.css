@@ -1,0 +1,190 @@
+/*------------------------------------*\
+	#Layout
+\*------------------------------------*/
+
+html {
+	position: relative;
+	min-height: 100%;
+}
+body {
+	color: #777;
+	background: #ededed url('../images/gray_jean.png') repeat left top;
+	margin: 0 0 125px;
+}
+.navbar-default{
+	border-bottom: solid 3px #ccc;
+	background-color: #fff;
+	margin-bottom: 40px;
+}
+.navbar-default .navbar-brand {
+	color: #fff;
+	font-size: 36px;
+	line-height: 1;
+	height: auto;
+	padding: 35px 35px;
+	background-color: #4aaaa5;
+	transition: all 0.5s ease;
+}
+.navbar-default .navbar-brand:hover {
+	color: #4aaaa5;
+	background-color: #ccc;
+}
+
+@media ( max-width: 768px ) {
+	.navbar-default {
+		background-color:#4aaaa5;
+	}
+	.navbar-default .navbar-brand {
+		padding: 25px 15px;
+	}
+	.navbar-toggle {
+		padding: 10px 10px;
+		margin-top: 25px;
+		background-color: #fff;
+	}
+}
+
+.navbar-nav {
+	margin-top: 45px;
+}
+.navbar-nav > li {
+	padding-right: 20px;
+	padding-left: 20px;
+	border-right: solid 1px #ddd;
+}
+.navbar-nav li:last-child {
+	border-right: none;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #777;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #4aaaa5;
+}
+.main-section,
+.aside-section {
+	background: #fff;
+	margin-bottom: 20px;
+}
+.section-content {
+	padding: 40px 30px;
+	border: solid 1px #ddd;
+}
+.site-footer {
+	color: #ccc;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 40px;
+	border-top: solid 8px #4aaaa5;
+	background-color: #666;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100px;
+}
+.copyright {
+	padding-top: 40px;
+}
+
+/*------------------------------------*\
+	#Styles
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+	color: #4aaaa5;
+	line-height: 1;
+	font-weight: bold;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+img {
+	height: auto;
+	max-width: 100%;
+}
+a {
+	color: #4aaaa5;
+}
+a:hover,
+a:focus {
+	color: #000;
+}
+a:active {
+	color: #4aaaa5;
+}
+
+/*------------------------------------*\
+	#Headings
+\*------------------------------------*/
+
+.page-header {
+	margin: 20px 0 20px;
+	border-bottom: solid 3px #ededed;
+}
+.sub-header {
+	padding-bottom: 5px;
+	margin: 10px 0 20px;
+	border-bottom: solid 1px #ededed;
+}
+
+/*------------------------------------*\
+	#Portfolio
+\*------------------------------------*/
+
+.portfolio-item {
+	position: relative;
+	margin-bottom: 20px;
+	border-width: 1px;
+	border-color: #ddd;
+	border-style: solid;
+	overflow: hidden;
+}
+.portfolio-item:hover {
+	border-color: #4aaaa5;
+}
+.portfolio-item .portfolio-title {
+	color: #fff;
+	font-size: 18px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	text-align: center;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	padding: 10px;
+	background: #4aaaa5;
+}
+.portfolio-item:hover .portfolio-title {
+	color: #000;
+}
+.portfolio-item img {
+	transition: all 0.5s ease;
+}
+.portfolio-item:hover img {
+	transform: scale( 1.1 );
+}
+
+/*------------------------------------*\
+	#Misc Classes
+\*------------------------------------*/
+
+.profile-pic {
+	margin-right: 25px;
+}
+
+/*------------------------------------*\
+	#List
+\*------------------------------------*/
+
+.social-links li {
+	margin-right: 4px;
+	display: inline-block;
+}
+.social-links li a {
+	display: block;
+	transition: all 0.5s ease;
+}
+.social-links li a:hover {
+	opacity: .60;
+}
