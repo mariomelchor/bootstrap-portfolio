@@ -47,6 +47,16 @@ body {
 	}
 }
 
+.navbar-default .navbar-nav > li > a {
+	color: #777;
+}
+.navbar-default .navbar-nav > li > a:hover {
+	color: #4aaaa5;
+}
+.navbar-collapse {
+	background: #fff;
+}
+
 @media ( min-width: 768px ) {
 	.navbar-nav {
 		margin-top: 45px;
@@ -59,20 +69,12 @@ body {
 	.navbar-nav li:last-child {
 		border-right: none;
 	}
+	.navbar-default .navbar-nav > li > a {
+		padding-top: 0;
+		padding-bottom: 0;
+	}
 }
 
-
-.navbar-default .navbar-nav > li > a {
-	color: #777;
-	padding-top: 0;
-	padding-bottom: 0;
-}
-.navbar-default .navbar-nav > li > a:hover {
-	color: #4aaaa5;
-}
-.navbar-collapse {
-	background: #fff;
-}
 .main-section,
 .aside-section {
 	background: #fff;
