@@ -8,6 +8,7 @@ html {
 }
 body {
 	color: #777;
+	line-height: 1.5;
 	background: #ededed url('../images/gray_jean.png') repeat left top;
 	margin: 0 0 125px;
 }
@@ -19,6 +20,8 @@ body {
 .navbar-default .navbar-brand {
 	color: #fff;
 	font-size: 36px;
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+	font-weight: bold;
 	line-height: 1;
 	height: auto;
 	padding: 35px 35px;
@@ -30,7 +33,7 @@ body {
 	background-color: #ccc;
 }
 
-@media ( max-width: 768px ) {
+@media ( max-width: 767px ) {
 	.navbar-default {
 		background-color:#4aaaa5;
 	}
@@ -44,17 +47,21 @@ body {
 	}
 }
 
-.navbar-nav {
-	margin-top: 45px;
+@media ( min-width: 768px ) {
+	.navbar-nav {
+		margin-top: 45px;
+	}
+	.navbar-nav > li {
+		padding-right: 20px;
+		padding-left: 20px;
+		border-right: solid 1px #ddd;
+	}
+	.navbar-nav li:last-child {
+		border-right: none;
+	}
 }
-.navbar-nav > li {
-	padding-right: 20px;
-	padding-left: 20px;
-	border-right: solid 1px #ddd;
-}
-.navbar-nav li:last-child {
-	border-right: none;
-}
+
+
 .navbar-default .navbar-nav > li > a {
 	color: #777;
 	padding-top: 0;
@@ -62,6 +69,9 @@ body {
 }
 .navbar-default .navbar-nav > li > a:hover {
 	color: #4aaaa5;
+}
+.navbar-collapse {
+	background: #fff;
 }
 .main-section,
 .aside-section {
@@ -119,8 +129,11 @@ a:active {
 \*------------------------------------*/
 
 .page-header {
-	margin: 20px 0 20px;
+	margin: 10px 0 20px;
 	border-bottom: solid 3px #ededed;
+}
+.page-header h2 {
+	margin-top: 0;
 }
 .sub-header {
 	padding-bottom: 5px;
@@ -177,14 +190,33 @@ a:active {
 	#List
 \*------------------------------------*/
 
-.social-links li {
-	margin-right: 4px;
-	display: inline-block;
-}
 .social-links li a {
 	display: block;
 	transition: all 0.5s ease;
 }
 .social-links li a:hover {
 	opacity: .60;
+}
+
+/*------------------------------------*\
+	#Buttons
+\*------------------------------------*/
+
+.btn-default {
+	color: #fff;
+	background-color: #4aaaa5;
+	border-color: transparent;
+}
+.btn-default:hover,
+.btn-default:focus  {
+	color: #4aaaa5;
+	background-color: #ccc;
+	border-color: transparent;
+}
+.btn-default:active,
+.btn-default:active:hover,
+.btn-default:active:focus {
+	color: #fff;
+	background-color: #4aaaa5;
+	border-color: transparent;
 }
