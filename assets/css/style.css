@@ -188,6 +188,16 @@ a:active {
 	margin-right: 25px;
 }
 
+@media ( max-width: 767px ) {
+	.profile-pic {
+		float: none !important;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		margin-bottom: 15px;
+	}
+}
+
 /*------------------------------------*\
 	#List
 \*------------------------------------*/
